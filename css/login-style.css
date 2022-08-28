@@ -1,0 +1,256 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+ 
+}
+
+
+
+/* Color for a link */
+.Just-A-Link a:link {
+
+  color: #705e6c;
+
+}
+
+/* Color for when you visit a link */
+.Just-A-Link a:visited {
+
+  color: #705e6c;
+
+}
+
+/* Color for when you press a link */
+.Just-A-Link a:active {
+  color: goldenrod;
+}
+
+/* Color for when you hover on a link */
+.Just-A-Link a:hover {
+  color: rgb(250, 217, 29);
+}
+
+.form{
+    position: relative;
+    padding: 60px 15px;
+    width:  350px;
+    height: 400px;
+    box-shadow: 0px 0px 10px 0px rgb(116, 119, 114);
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.form-inner{
+
+    position: absolute;
+    height: 98%;
+    width: 98%;
+    top: 50%;
+    left: 50%;
+    background-color: #c0b6c1;
+    transform: translate(-50%, -50%);
+
+}
+
+.form-inner h2{
+    font-size: 25px;
+    color: #705e6c;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.content{
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+
+}
+
+.form-inner .input-elene{
+    display: block;
+    padding: 12px 15px;
+    width: 100%;
+    left: 50%;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 1.5px solid rgb(109, 87, 121);
+    outline: none;
+    background: #19052c;
+    color: white;
+
+}
+
+.our-btn{
+
+  cursor: pointer;
+  color: white;
+  margin-top: 40px;
+  margin-left: 45px;
+  width: 25%;
+  font-weight: 600;
+  padding: 12px;
+  outline: none;
+  background: #705e6c;
+  font-size: 18px;
+  border-radius: 10px;
+  transition: 0.4s;
+
+}
+
+.our-btn:hover{
+    background-color: #e7c416;
+
+
+}
+
+/* Animation */
+.form span{
+    position: absolute;
+    height: 50%;
+    width: 50%; 
+   
+
+}
+/* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+
+/* Thats ^ for the animation */
+
+
+/* For line 1 */
+
+.form span:nth-child(1) {
+    background: #f7d61c;
+    animation: 5s span1 infinite linear;
+    animation-delay: 1s;
+    top: 0;
+    left: -48%;
+ }
+ .form span:nth-child(2) {
+    background: #f7d61c;
+    bottom: 0;
+    right: -48%;
+    animation: 5s span2 infinite linear;
+ }
+ .form span:nth-child(3) {
+    background: #f7d61c;
+    top: 0px;
+    animation: 5s span3 infinite linear;
+    right: -48%;
+ }
+ .form span:nth-child(4) {
+    animation: 5s span4 infinite linear;
+    animation-delay: 1s;
+    background: #f7d61c;
+    bottom: 0;
+    right: -48%;
+ }
+ 
+ @keyframes span1 {
+ 0% {
+  top: -48%;
+  left: -48%;
+ }
+ 25% {
+  top: -48%;
+  left: 98%;
+ }
+ 50% {
+  top: 98%;
+  left: 98%;
+ }
+  75% {
+   top: 98%;
+   left: -48%;
+ }
+ 100% {
+   top: -48%;
+   left: -48%;
+ }
+ }
+ @keyframes span2 {
+ 0% {
+   bottom: -48%;
+   right: -48%;
+ }
+ 25% {
+   bottom: -48%;
+   right: 98%;
+ }
+ 50% {
+   bottom: 98%;
+   right: 98%;
+ }
+ 75% {
+   bottom: 98%;
+   right: -48%;
+ }
+ 100% {
+   bottom: -48%;
+   right: -48%;
+ }
+ }
+ @keyframes span3 {
+ 0% {
+   top: -48%;
+   left: -48%;
+ }
+ 25% {
+   top: -48%;
+   left: 98%;
+ }
+ 50% {
+   top: 98%;
+   left: 98%;
+ }
+ 75% {
+   top: 98%;
+   left: -48%;
+ }
+ 100% {
+   top: -48%;
+   left: -48%;
+ }
+ }
+ 
+ @keyframes span4 {
+ 0% {
+   bottom: -48%;
+   right: -48%;
+ }
+ 25% {
+   bottom: -48%;
+   right: 98%;
+ }
+ 50% {
+   bottom: 98%;
+   right: 98%;
+ }
+ 75% {
+   bottom: 98%;
+   right: -48%;
+ }
+ 100% {
+   bottom: -48%;
+   right: -48%;
+ }
+ 
+}
+
+@media (max-width:768px)
+{
+  
+}
+
+
